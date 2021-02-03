@@ -5,11 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style/style.css">
     <link rel="shortcut icon" href="/style/img/Atelie-favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <title>O Ateliê Girassol</title>
 </head>
 <body>
     <header>
-        
+        <img src="/style/img/Logotipo-site.png" alt="logo" id="logo" onclick="home()">
+        <div id="navegacao">
+            <h3 class="link" onclick="trabalho()">Nosso trabalho</h3>
+            <h3 class="link" onclick="atelie()">O Ateliê</h3>
+            <h3 class="link" onclick="contato()">Contato</h3>
+        </div>
     </header>
+    <div>
+        <h1 id="Titulo"></h1>
+    </div>
+    <script>
+        function home(){
+            var home = window.document.getElementById('Titulo')
+            home.innerHTML = ''
+        }
+        function trabalho(){
+            var trabalho = window.document.getElementById('Titulo')
+            trabalho.innerHTML = 'Nosso Trabalho'
+        }
+        function atelie(){
+            var atelie = window.document.getElementById('Titulo')
+            atelie.innerHTML = 'O Ateliê'
+        }
+        function contato(){
+            var contato = window.document.getElementById('Titulo')
+            contato.innerHTML = 'Contato'
+        }
+        
+    </script>
 </body>
 </html>
