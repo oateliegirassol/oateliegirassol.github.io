@@ -40,7 +40,7 @@ header{
     font-weight: 700;
 }
 
-#Titulo {
+#titulo {
     color: #755AB3;
     font-size: 30pt;
     text-align: center;
@@ -51,6 +51,11 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#conteudo{
+    height: 100%;
+    width: 100%;
 }
 
 #container div{
@@ -67,3 +72,8 @@ header{
     margin: 2%;
 }
 
+#alerta {
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+}
