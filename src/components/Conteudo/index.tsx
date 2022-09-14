@@ -39,9 +39,9 @@ export function Conteudo({pagina}:ConteudoProps){
                     <h1 id="titulo">Seja bem-vindo!</h1>
                     <p className="apresentacao">Aconchegue-se. Sinta-se à vontade para conhecer o nosso espaço de acolhimento, afeto e desenvolvimento.</p>
                     <div id="grupoMurais">
-                        <Mural img={capa1} alinhamento='esq'>Atividade com tinta</Mural>
-                        <Mural img={capa2} alinhamento='dir'>Mão na massa com argila</Mural>
-                        <Mural img={capa3} alinhamento='esq'>Brincando e aprendendo</Mural>
+                        <Mural img={capa1} alinhamento='esq'></Mural>
+                        <Mural img={capa2} alinhamento='dir'></Mural>
+                        <Mural img={capa3} alinhamento='esq'></Mural>
                     </div>
                 </div>
             }
