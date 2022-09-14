@@ -3,12 +3,17 @@ import styled from 'styled-components'
 export const Container = styled.section `
     display: flex;
     width: 100%;
+    min-height: 100vh;
+    padding-bottom: 3rem;
     justify-content: center;
     #main{
         width: 60%;
         display: flex;
         justify-content: center;
         flex-direction: column;
+        @media (max-width: 500px){
+            width: 90%;
+        }
     }
     #titulo {
         color: #755AB3;

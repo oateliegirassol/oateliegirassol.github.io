@@ -4,6 +4,9 @@ export const Container = styled.footer `
     img{
         max-width: 18rem;
         border-radius: 30px;
+        @media (max-width: 500px){
+            max-width: 9rem;
+        }
     }
     div{
         width: 100%;
@@ -28,4 +31,5 @@ export const Container = styled.footer `
     #cen{
         justify-content: center;
     }
+
 `
