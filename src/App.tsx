@@ -1,5 +1,5 @@
 import GlobalStyle from './styles/global'; //Importa os estilos globais da aplicação
-import React from 'react';
+import React, { useState } from 'react';
 import { Cabecalho } from './components/Cabecalho';
 import { Conteudo } from './components/Conteudo';
 import { Rodape } from './components/Rodape';
@@ -35,13 +35,23 @@ export const opcoes :Array<Topico> = [
 
 
 function App({ pagina }:AppProps) {
-  
+  const [estadoMenu, mudarEstadoMenu] = useState(false)
   return (
       <main className='App'>
         <GlobalStyle tema='claro'/>
-        <Cabecalho/>
-        <Conteudo pagina={pagina}/>
-        <Rodape/>
+        <Cabecalho funcaoCabecalho={() => mudarEstadoMenu(!estadoMenu)} estadoCabecalho={estadoMenu}/>
+        {
+        estadoMenu === false?
+          <>
+            <Conteudo pagina={pagina}/>
+            <Rodape/>
+          </>
+          :
+          <>
+          
+          </>
+        }
+
       </main>
   );
 }

@@ -17,6 +17,10 @@ const GlobalStyle = createGlobalStyle<GlobalStyleProps>`
         --color-grey-secondary: #F5F5F5;
         --color-black-primary: #353b48;
     }
+    html{
+        margin: 0;
+        padding: 0;
+    }
     body{
         background: ${props => props.tema === 'claro'? "var(--color-white-primary)" : "var(--color-black-primary)"};
         max-width: 100vw;
